@@ -6,41 +6,59 @@
 //          bit a bit (biwise)
 //          unários
 
-var num = 0; // {1}
-document.write("<br>");             
-document.write('var num = 0     :   ' + (num));
+
+
+function myFunction(tex, num) {
+    var num = num;
+    var tex = tex;
+    document.write(("<br>") + (" In: ") + (tex) + (" Out ") + (num));
+}
+
+var num = 1;
+var tex = '';   
+
+num = 0; // {1}
+tex = 'var num = 0     :   ';         
+myFunction(tex, num)
+
 num = num + 2; // incrementa 2
-document.write("<br>");             
-document.write('num = num + 2   :   ' + (num));
-num = num * 2;
-document.write("<br>");             
-document.write('num = num * 2   :   ' + (num));
+tex = 'num = num + 2   :   ';         
+myFunction(tex, num)
+
+num = num * 2; 
+tex = 'num = num * 2   :   ';         
+myFunction(tex, num)
+
 num = num / 2;
-document.write("<br>");             
-document.write('num = num / 2   :   ' + (num));
+tex = 'num = num / 2   :   ';         
+myFunction(tex, num)
+
 num++; // incrementa com ela mesma
-document.write("<br>");             
-document.write('num++   :   ' + (num));
+tex = 'num++   :   ';         
+myFunction(tex, num)
+          
+
 num--; // decrementa
-document.write("<br>");             
-document.write('num--   :   ' + (num));
+tex = 'num--   :   ';         
+myFunction(tex, num)
+          
 num += 1; // incrementa 1
-document.write("<br>");             
+        
 document.write('num += 1   :   ' + (num));
 num -= 2; // decrementa 2
-document.write("<br>");             
+         
 document.write('num -= 2  :   ' + (num));
 num *= 2; // dobra 2
-document.write("<br>");             
+           
 document.write('num *= 2   :   ' + (num));
 num /= 2; // divide 2
-document.write("<br>");             
+           
 document.write('num /= 2   :   ' + (num));
 num %= 3; //
-document.write("<br>");             
+           
 document.write('num %= 3   :   ' + (num));
 
-document.write("<br>"); 
+
 
 
 num = 1;
